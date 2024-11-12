@@ -1,6 +1,6 @@
 import { message } from 'antd';
 import axios from 'axios';
-const apiUrl = process.env.REACT_APP_API_URL || http://localhost:5000;
+const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 export const getAllCars=()=>async dispatch=>{
 
     dispatch({type: 'LOADING' , payload:true})

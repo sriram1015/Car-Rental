@@ -1,6 +1,6 @@
 import axios from "axios";
 import {message} from 'antd'
-const apiUrl = process.env.REACT_APP_API_URL ;
+const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 export const userLogin=(reqObj)=>async dispatch=>{
     
     dispatch({type: 'LOADING' , payload:true})

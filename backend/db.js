@@ -8,6 +8,8 @@ function connectDB() {
     if (!mongoURI) {
         console.error('MongoDB URI is missing. Please set MONGO_URL in the .env file.');
         process.exit(1); // Exit the process if MongoDB URL is not found
+    }else{
+        console.log("mongodb connect sucessfully");
     }
 
     mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
